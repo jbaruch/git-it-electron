@@ -4,3 +4,7 @@ node_js:
 before_install: 
  - curl -u${ARTIFACTORY_USERNAME}:${ARTIFACTORY_PASSWORD} https://github.jfrog.io/github/api/npm/auth > ~/.npmrc
  - npm config set registry https://github.jfrog.io/github/api/npm/npm
+
+
+#([0-9]+)\/(.*)
+#${path:1}
